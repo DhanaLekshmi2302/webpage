@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<style>
+    * {
+    font-family: "Muli", sans-serif;
+    margin: 0;
+  }
+  header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;  }
+  .title {
+    margin-left: 20px;
+    width:10%;
+    display: flex;
+    align-items: center;
+  }
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  nav {
+    width:60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+  .options {
+    width:30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+  }
+  .search {
+    width: 220px;
+    height:90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+  }
+  input {
+    border: 1px solid black;
+    background-color: black;
+  }
+  input::placeholder {
+    color: white;
+  }
+  .sec1{
+    height:100vh;
+    width:100vw;
+    position: relative;
+}
+.main{
+    margin-left:10%;
+    margin-right: 10%;
+    width:80%;
+    height:85%;
+}
+.inner{
+    position: absolute;
+    width:50%;
+    height:70%;
+    left:340px;
+    top:50px;
+}
+.bottom{
+    position: absolute;
+    bottom:130px;
+    color: white;
+    font-size: 30px;
+    left: 330px;
+}
+.top{
+    width:30%;
+    font-size: 50px;
+    font-weight: bolder;
+    position:absolute;
+    color: white;
+    top: 40px;
+    right:200px;
+    transform: rotate(-10deg);
+}
+.grey{
+    width: 60px;
+    height:60px;
+}
+.sec2{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right_side{
+    width:50%;
+    height:85%;
+}
+.article{
+    padding-left: 20px;
+    padding: 50px;
+    width:30%;
+    height:68%;
+    background-color:rgb(81, 132, 132);
+}
+.art_p{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    color: white;
+    line-height:1.5;
+    font-size:25px;
+    width: 90%;
+}
+.shop{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 0;
+    color: black;
+}
+.sec3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 70vh;
+}
+
+.last_top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  height: 60%;
+}
+
+.article_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 90%;
+  background-color: rgb(212, 207, 207);
+}
+.art_side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 90%;
+  background-color: black;
+}
+
+.last_h1 {
+  font-size: 30px;
+  font-weight: bolder;
+  width: 50%;
+  text-align: center;
+}
+
+.sign {
+  background-color: rgb(212, 207, 207);
+  border: 1px solid black;
+  height: 30px;
+  margin-top: 8px;
+}
+
+.feature {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  display: flex;
+  height: 50%;
+  align-items: center;
+  justify-content: space-around;
+}
+.shipping,
+.returns,
+.follow {
+  margin-top: 20px;
+  width: 15%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.follow_icon {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+}
+
+footer {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+}
+
+.foot_info {
+  display: flex;
+  justify-content: space-around;
+  gap:50px;
+}
+
+.never {
+    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  width: 20%;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#foot_input {
+  background-color: white;
+  border: 1px solid black;
+  height: 30px;
+  width: 80%;
+}
+
+#foot_input::placeholder {
+  color: black;
+}
+
+#arrow {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  width: 20%;
+  height: 34px;
+}
+
+.store {
+  margin-top: 30px;
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: column;
+  width: 20%;
+}
+
+.follow_icons {
+  display: flex;
+}
+
+.icon1,
+.icon2,
+.icon3,
+.icon4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(96, 87, 87);
+  width: 30px;
+  height: 30px;
+}
+
+.about {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  width: 20%;
+}
+
+h5 {
+  font-weight: lighter;
+  line-height: 1.5;
+}
+.help{
+  width:20%;
+  margin-top: 30px;
+
+
+}
+.ques{
+  display: flex;
+}
+.pay_img{
+  margin-top: 10PX;
+  display: flex;
+  gap:8px;
+}
+</style>
+
+<body>
+  <header>
+    <div class="title">
+      <h1 style="font-size: 18px">CONVERSE</h1>
+    </div>
+    <nav>
+      <h5>New&Featured</h5>
+      <h5>Women</h5>
+      <h5>Men</h5>
+      <h5>Kids</h5>
+      <h5 style="color: red">Sale</h5>
+    </nav>
+    <div class="options">
+        <h5>Sign in</h5>
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="search">
+          <input type="text" placeholder="Search " /><i class="fa-solid fa-magnifying-glass" style="color: white"></i>
+        </div>
+      </div>
+    </header>
+    <section class="sec1">
+      <img src="shopping1.jpg" alt="" class="main" />
+      <img src="shopping.jpg" alt="" class="inner" />
+      <h1 class="top">
+        CELEBRATE YOUR WAY
+      </h1>
+      <h1 class="bottom">GET YOUR CHUCKS</h1>
+    </section>
+    <section class="sec2">
+      <img src="download.jpg" alt="" class="right_side" />
+      <div class="article">
+        <h1 style="font-size: 45px; color: white">Mix It Up</h1>
+        <p class="art_p">
+          Reintroducing the Chuck 70 AT-CX Experimental edges. Grounded style.
+          Out-of-this-world comfort that takes your look into a new realm
+        </p>
+        <button class="shop">Shop Now</button>
+    </div>
+  </section>
+  <section class="sec3">
+    <div class="last_top">
+      <div class="article_1">
+        <h1 class="last_h1">NEVER MISS A BEAT</h1>
+        <p style="width: 70%; text-align: center; line-height: 1.5">
+          Be the first to hear about exclusive sales, product drops, new
+          collabs, and more-sent straight to your inbox.
+        </p>
+        <button class="sign">Sign Up For Emails</button>
+      </div>
+      <div class="art_side">
+        <img src="shopping.jpg" alt="" style="width: 20%; height: 40%" />
+      </div>
+    </div>
+    <div class="feature">
+      <div class="shipping">
+        <i class="fa-solid fa-truck-fast" style="font-size: 35px; margin-bottom: 10px"></i>
+        <h3>Fast, Free Shipping</h3>
+        <p style="font-size: 15px; margin: 15px">
+          Sign up for Converse. in account and get free shipping on every
+          order
+        </p>
+        <a href="" style="color: black; font-weight: 600">Learn More</a>
+      </div>
+      <div class="returns">
+        <i class="fa-regular fa-share-from-square" style="font-size: 35px; margin-bottom: 10px"></i>
+        <h3>Worry-Free Returns</h3>
+        <p style="font-size: 15px; margin: 15px">
+          Not happy? Return your purchase for free within 7 days.
+        </p>
+        <a href="" style="color: black; font-weight: 600">Learn More</a>
+      </div>
+      <div class="follow">
+        <div class="follow_icon" style="margin-bottom: 10px">
+          <i class="fa-brands fa-facebook-f" style="font-size: 25px"></i>
+          <i class="fa-brands fa-instagram" style="font-size: 25px"></i>
+          <i class="fa-brands fa-twitter" style="font-size: 25px"></i>
+        </div>
+        <h3>Follow Us</h3>
+        <p style="font-size: 15px; margin: 15px">
+          Keep up with the latest Converse news on our social channels.
+        </p> 
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="foot_info">
+      <div class="never">
+        <h4>Never Miss a Beat</h4>
+        <p style="font-size: 12px; margin-top: 10px; margin-bottom: 10px;">
+          Be the first to hear about product launches, collaborations, and
+          more when you sign up for emails
+        </p>
+        <div class="email">
+            <input type="email" placeholder="Enter Your Email address" id="foot_input" /><i
+              class="fa-solid fa-arrow-right" id="arrow"></i>
+          </div>
+        </div>
+        <div class="store">
+          <h4>Find a Store</h4>
+          <h4 style="margin-top:10px; margin-bottom: 10px;">Follow Us:</h4>
+          <div class="follow_icons">
+            <div class="icon1">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="icon2">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="icon3">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="icon4">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+        <div class="help">
+          <h4 style="margin-bottom: 10px;">Get Help</h4>
+          <div class="ques">
+            <div class="left_help">
+              <h5>FAQs</h5>
+              <h5>Shipping & Delivery</h5>
+            <h5>Payments</h5>
+            <h5>Size Guide</h5>
+            <h5>Student Discount</h5>
+          </div>
+          <div class="right_help">
+            <h5>Order Status</h5>
+            <h5>Returns & Refunds</h5>
+            <h5>Contact Us</h5>
+            <h5>Find a Store</h5>
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <h4>About Converse</h>
+          <h5 style="font-weight: lighter;">Our Story</h5>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<html>
+  
+ 
+
+  
+
